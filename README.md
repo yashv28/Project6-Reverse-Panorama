@@ -48,4 +48,5 @@ Block Size was varied from 128 threads per block to 1024:
 
 ###Bloopers:###
 A little too much of warping. :P
+| ----------- | ----------- |
 | ![](images/b1.png) | ![](images/b2.png) |
