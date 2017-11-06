@@ -15,7 +15,7 @@ In this project, I have implemented an inverse transformation to convert an equi
 * For each pixel use bilinear interpolation between the four surrounding pixels.
 * Calculate coordinates of bottom-left and top-right pixels, and the fraction of way across pixel in one image segment.
 * Calculate pixel values at 4 corners of the image segment.
-* Interpolate he pixel values across 3 colour channels.
+* Interpolate the pixel values across 3 colour channels.
 * Draw the pixel values in the out image for that image segment.
 
 # Features:
