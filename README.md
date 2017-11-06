@@ -35,7 +35,9 @@ In this project, I have implemented an inverse transformation to convert an equi
 
 Block Size was varied from 128 threads per block to 1024:
 ![](images/blocksize.jpg)
+
 Thus, 512 was chosen for performance analysis
+
 
 The Panorama Resolution Size was varied rom 1024x512 to 20000x10000 and performance was recorded:
 
@@ -43,11 +45,13 @@ The Panorama Resolution Size was varied rom 1024x512 to 20000x10000 and performa
 
 ![](images/cpuvsgpu.jpg)
 
+
 The time taken by pixel warp kernel and the total time taken by gpu was analyzed:
 
 ![](images/kernelvstotal.jpg)
 
 There is a big proportion of unvoidable memory access in the case of GPU, which bottlenecks its performance.
+
 
 ### Bloopers:
 A little too much of warping. :P
