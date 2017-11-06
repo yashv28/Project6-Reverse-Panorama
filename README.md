@@ -56,5 +56,6 @@ There is a big proportion of unvoidable memory access in the case of GPU, which 
 ### Bloopers:
 A little too much of warping. :P
 
+|  1 | 2 |
 | ----------- | ----------- |
 | ![](images/b1.png) | ![](images/b2.png) |
