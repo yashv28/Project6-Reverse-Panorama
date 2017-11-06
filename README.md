@@ -10,7 +10,7 @@ In this project, I have implemented an inverse transformation to convert an equi
 
 *Note* - The valid equirectangular/spherical/cylindrical panorama resolution is 2:1 and this project follows it strictly.
 
-###Process of Inverse Transformation###
+### Process of Inverse Transformation:
 * Distribute the input panorama image into 6 segments: Top, Bottom, Left, Right, Front and Back.
 * For each pixel use bilinear interpolation between the four surrounding pixels.
 * Calculate coordinates of bottom-left and top-right pixels, and the fraction of way across pixel in one image segment.
@@ -33,20 +33,24 @@ In this project, I have implemented an inverse transformation to convert an equi
 
 # Performance Analysis:
 
+Block Size was varied from 128 threads per block to 1024:
+![](images/blocksize.jpg)
+Thus, 512 was chosen for performance analysis
+
 The Panorama Resolution Size was varied rom 1024x512 to 20000x10000 and performance was recorded:
+
 ![](images/chart.jpg)
 
 ![](images/cpuvsgpu.jpg)
 
 The time taken by pixel warp kernel and the total time taken by gpu was analyzed:
+
 ![](images/kernelvstotal.jpg)
 
 There is a big proportion of unvoidable memory access in the case of GPU, which bottlenecks its performance.
 
-Block Size was varied from 128 threads per block to 1024:
-![](images/blocksize.jpg)
-
-###Bloopers:###
+### Bloopers:
 A little too much of warping. :P
+
 | ----------- | ----------- |
 | ![](images/b1.png) | ![](images/b2.png) |
